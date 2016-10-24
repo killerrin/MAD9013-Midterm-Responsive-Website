@@ -27,6 +27,7 @@ html{
     line-height: 1.6;
     font-family: 'Droid Sans', 'more font stack stuff', sans-serif;
 }
+
 /*************************** 
 DEFAULTS - MOBILE FIRST 
 ***************************/
@@ -45,6 +46,9 @@ pre, code, kbd{
 /***************************
     LAYOUT - MOBILE FIRST
 ***************************/
+
+
+
 .wrapper{
     width: 95%;
     margin: 0 auto;
@@ -91,12 +95,22 @@ footer{
     width: 100%;
 }
 
+/* Mobile View */
+@media screen and (min-width:0px){
+	
+}
+
+/* Tablet View */
 @media screen and (min-width:600px){
     
 }
+
+/* Desktop View */
 @media screen and (min-width: 800px){
     
 }
+
+/* Large Desktop View */
 @media screen and (min-width: 1200px){
     
 }
