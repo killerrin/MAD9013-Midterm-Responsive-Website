@@ -220,9 +220,11 @@ pre, code, kbd{
     }
     nav>ul{
         width: 100%;
+        border:0px;        
     }
     nav li{
         float: left;
+        border:0px;        
         width: 20%;
         list-style: none;
     }
@@ -237,7 +239,7 @@ pre, code, kbd{
         width: 90%;
     }
     .col{
-        float: none;
+        float: left;
         width: 50%;
     }
     .col img{
@@ -247,6 +249,7 @@ pre, code, kbd{
         background-color: azure;
     }
     footer{
+        clear: left;                
         width: 100%;             
     }
 }
@@ -286,7 +289,7 @@ pre, code, kbd{
         float:left;
     }
     .col{
-        float: none;
+        float: left;
         width: 50%;
     }
     .col img{
