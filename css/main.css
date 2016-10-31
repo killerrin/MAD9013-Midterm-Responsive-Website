@@ -154,6 +154,8 @@ pre, code, kbd{
         height: auto;
         max-width: 100%;
         background-color: azure;
+
+        float: none;
     }
     footer{
         width: 100%;
@@ -200,6 +202,8 @@ pre, code, kbd{
         height: auto;
         max-width: 100%;
         background-color: azure;
+
+        float: left;
     }
     footer{
         width: 90%;    
@@ -247,6 +251,8 @@ pre, code, kbd{
         height: auto;
         max-width: 100%;
         background-color: azure;
+
+        float: left;
     }
     footer{
         clear: left;                
@@ -297,6 +303,8 @@ pre, code, kbd{
         height: auto;
         max-width: 100%;
         background-color: azure;
+
+        float: left;        
     }
     footer{
         clear: left;        
