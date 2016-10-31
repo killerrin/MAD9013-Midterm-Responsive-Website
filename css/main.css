@@ -14,10 +14,10 @@ Font Scaling
 
 Colour scheme
 https://color.adobe.com/Scifi-Scheme-color-theme-8804031/
-#8BB9BF
-#5D7B7F
+#8BB9BF - Headers
+#5D7B7F - A
 #B9F6FF
-#8EBEC4
+#8EBEC4 - P
 #A7DEE5
 
 **************************************************/
@@ -38,7 +38,7 @@ html{
 DEFAULTA -- UNCHANGING STYLES
 ***************************/
 html { 
-    color: white;    
+    color: #B9F6FF; /* Fallback Color: */
 }
 body {
     background: black;
@@ -47,12 +47,41 @@ body {
 }
 .masthead {
     background: black;    
-    background-image: url("../images/header.png");
+    background-image: url("../images/headerFooter.png");
     background-repeat: repeat;
+
+    border-bottom: solid black 4px;
+    box-shadow: 0 4px 2px -2px darkslategray;
+    
+    margin-bottom: 10px;
+    padding: 5px;
+}
+.footer {
+    background: black;
+    background-image: url("../images/headerFooter.png");   
+    background-repeat: repeat;
+
+    border-top: solid black 4px;
+    box-shadow: 0 -4px 2px -2px darkslategray;
+    
+    margin-top: 10px;    
+    padding: 5px;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color: 
+    color: #8BB9BF;
+}
+
+p {
+    color: #8EBEC4;
+}
+
+a, a:link, a:visited {
+    color: #5D7B7F;
+}
+
+a:active, a:focus, a:hover{
+    opacity: 0.5;
 }
 
 /*************************** 
@@ -121,7 +150,6 @@ pre, code, kbd{
     }
     footer{
         width: 100%;
-        background: red;        
     }
 }
 /* Tablet View */
@@ -169,8 +197,7 @@ pre, code, kbd{
         background-color: azure;
     }
     footer{
-        width: 90%;
-        background: orange;        
+        width: 90%;    
     }
 }
 
@@ -219,8 +246,7 @@ pre, code, kbd{
         background-color: azure;
     }
     footer{
-        width: 100%;
-        background: yellow;                
+        width: 100%;             
     }
 }
 
@@ -269,8 +295,6 @@ pre, code, kbd{
         background-color: azure;
     }
     footer{
-        width: 100%;
-
-        background: green;                
+        width: 100%;              
     }
 }
