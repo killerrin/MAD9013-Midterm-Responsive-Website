@@ -110,6 +110,9 @@ footer {
     margin-right: auto;
 }
 
+
+/* Style the content */
+
 h1,
 h2,
 h3,
@@ -237,7 +240,6 @@ a:visited {
         clear: left;
         width: 100%;
     }
-
     /* Font Sizing */
     h1 {
         font-size: 2.618rem;
