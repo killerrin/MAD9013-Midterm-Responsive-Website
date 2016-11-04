@@ -90,6 +90,26 @@ body {
     padding: 5px;
 }
 
+.footer ul {
+    list-style: none;
+}
+
+
+/* Center the Content */
+
+.navigation {
+    margin: 0 auto;
+}
+
+.main {
+    margin: 0 auto;
+}
+
+footer {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 h1,
 h2,
 h3,
@@ -119,42 +139,54 @@ a:hover {
     text-decoration: none;
 }
 
+.col p {
+    margin-bottom: 1rem;
+}
+
 
 /*************************** 
 FONT DEFAULTS 
 ***************************/
 
 h1 {
-    font: bold 4.236rem 'Droid Serif', 'Neuton', 'Lora', serif;
+    font: bold 'Droid Serif', 'Neuton', 'Lora', serif;
+    /* 4.236rem */
 }
 
 h2 {
-    font: bold 2.618rem 'Droid Serif', 'Neuton', 'Lora', serif;
+    font: bold 'Droid Serif', 'Neuton', 'Lora', serif;
+    /* 2.618rem */
 }
 
 li,
 p,
 a {
-    font: bold 1.618rem 'Droid Sans', 'Lato', 'Roboto', sans-serif;
+    font: bold 'Droid Sans', 'Lato', 'Roboto', sans-serif;
+    /* 1.618 */
 }
 
 pre,
 code,
 kbd {
-    font: normal 1.0rem 'Droid Sans Mono', 'Ubuntu', 'PT Sans', 'Open Sans Condensed', sans-serif;
+    font: normal 'Droid Sans Mono', 'Ubuntu', 'PT Sans', 'Open Sans Condensed', sans-serif;
+    /* 1.0rem */
 }
 
 a,
 a:link,
 a:visited {
     font: bold 1.618rem 'Droid Sans', 'Lato', 'Roboto', sans-serif;
+    /* 1.618rem */
 }
 
 
 /***************************
     LAYOUT - MOBILE FIRST
 ***************************/
+
+
 /* Mobile View */
+
 @media screen and (min-width:0px) {
     .wrapper {
         width: 95%;
@@ -199,14 +231,40 @@ a:visited {
         height: auto;
         background-color: azure;
         float: none;
+        margin-right: 0;
     }
     footer {
         clear: left;
         width: 100%;
     }
+
+    /* Font Sizing */
+    h1 {
+        font-size: 2.618rem;
+    }
+    h2 {
+        font-size: 1.68rem;
+    }
+    li,
+    p,
+    a {
+        font-size: 1.0rem;
+    }
+    pre,
+    code,
+    kbd {
+        font-size: 1.0rem;
+    }
+    a,
+    a:link,
+    a:visited {
+        font-size: 1.0rem;
+    }
 }
 
+
 /* Tablet View */
+
 @media screen and (min-width:600px) {
     .wrapper {
         width: 100%;
@@ -249,14 +307,39 @@ a:visited {
         height: auto;
         background-color: azure;
         float: left;
+        margin-right: 1rem;
     }
     footer {
         clear: left;
         width: 90%;
     }
+    /* Font Sizing */
+    h1 {
+        font-size: 2.618rem;
+    }
+    h2 {
+        font-size: 1.68rem;
+    }
+    li,
+    p,
+    a {
+        font-size: 1.0rem;
+    }
+    pre,
+    code,
+    kbd {
+        font-size: 1.0rem;
+    }
+    a,
+    a:link,
+    a:visited {
+        font-size: 1.0rem;
+    }
 }
 
+
 /* Desktop View */
+
 @media screen and (min-width: 800px) {
     .wrapper {
         width: 100%;
@@ -300,14 +383,39 @@ a:visited {
         height: auto;
         background-color: azure;
         float: left;
+        margin-right: 1rem;
     }
     footer {
         clear: left;
         width: 100%;
     }
+    /* Font Sizing */
+    h1 {
+        font-size: 4.236rem;
+    }
+    h2 {
+        font-size: 2.68rem;
+    }
+    li,
+    p,
+    a {
+        font-size: 1.618rem;
+    }
+    pre,
+    code,
+    kbd {
+        font-size: 1.618rem;
+    }
+    a,
+    a:link,
+    a:visited {
+        font-size: 1.618rem;
+    }
 }
 
+
 /* Large Desktop View */
+
 @media screen and (min-width: 1200px) {
     .wrapper {
         width: 100%;
@@ -353,22 +461,32 @@ a:visited {
         height: auto;
         background-color: azure;
         float: left;
+        margin-right: 1rem;
     }
     footer {
         clear: left;
         width: 100%;
     }
-}
-
-/* Center the Content */
-.navigation {
-    margin: 0 auto;
-}
-
-.main {
-    margin: 0 auto;
-}
-
-footer {
-    margin: 0 auto;
+    /* Font Sizing */
+    h1 {
+        font-size: 4.236rem;
+    }
+    h2 {
+        font-size: 2.68rem;
+    }
+    li,
+    p,
+    a {
+        font-size: 1.618rem;
+    }
+    pre,
+    code,
+    kbd {
+        font-size: 1.618rem;
+    }
+    a,
+    a:link,
+    a:visited {
+        font-size: 1.618rem;
+    }
 }
