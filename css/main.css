@@ -4,6 +4,18 @@ Droid Serif
 Droid Sans
 Droid Sans Mono
 
+Serif:
+Lora
+Neutron
+
+Sans-Serif:
+Lato
+Roboto
+
+font-family: 'Open Sans Condensed', sans-serif;
+font-family: 'PT Sans', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+
 Font Scaling
 6.854rem
 4.236rem
@@ -22,6 +34,10 @@ https://color.adobe.com/Scifi-Scheme-color-theme-8804031/
 
 **************************************************/
 @import 'https://fonts.googleapis.com/css?family=Droid+Sans|Droid+Sans+Mono|Droid+Serif';
+@import url('https://fonts.googleapis.com/css?family=Lora|Neuton');
+@import url('https://fonts.googleapis.com/css?family=Lato|Roboto');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|PT+Sans|Ubuntu');
+
 
 *{
     padding: 0;
@@ -31,7 +47,7 @@ https://color.adobe.com/Scifi-Scheme-color-theme-8804031/
 html{
     font-size: 16px;
     line-height: 1.6;
-    font-family: 'Droid Sans', 'more font stack stuff', sans-serif;
+    font-family: 'Droid Sans', 'Lato', 'Roboto', sans-serif;
 }
 
 .clearfix {
@@ -96,16 +112,16 @@ a:active, a:focus, a:hover{
 DEFAULTS - MOBILE FIRST 
 ***************************/
 h1{
-    font: bold 4.236rem 'Droid Serif', 'more font stack stuff', serif;
+    font: bold 4.236rem 'Droid Serif', 'Neuton', 'Lora', serif;
 }
 h2{
-    font: bold 2.618rem 'Droid Serif', 'more font stack stuff', serif;
+    font: bold 2.618rem 'Droid Serif', 'Neuton', 'Lora', serif;
 }
 li, p, a{
-    font: bold 1.618rem 'Droid Sans', 'more font stack stuff', sans-serif;
+    font: bold 1.618rem 'Droid Sans', 'Lato', 'Roboto', sans-serif;
 }
 pre, code, kbd{
-    font: normal 1.0rem 'Droid Sans Mono', 'more font stack stuff', 
+    font: normal 1.0rem 'Droid Sans Mono', 'Ubuntu', 'PT Sans', 'Open Sans Condensed', sans-serif; 
 }
 
 
@@ -139,7 +155,7 @@ pre, code, kbd{
     nav a:link,
     nav a:visited{
         display: block;
-        font: bold 1.618rem 'Droid Sans', 'more font stack stuff', sans-serif;
+        font: bold 1.618rem 'Droid Sans', 'Lato', 'Roboto', sans-serif;
         text-align: center;
     }
     main{
@@ -148,6 +164,8 @@ pre, code, kbd{
     .col{
         float: none;
         width: 100%;
+
+        padding-right: 0;                        
     }
     .col img{
         width: 100%;
@@ -158,6 +176,7 @@ pre, code, kbd{
         float: none;
     }
     footer{
+        clear: left;
         width: 100%;
     }
 }
@@ -187,15 +206,17 @@ pre, code, kbd{
     nav a:link,
     nav a:visited{
         display: block;
-        font: bold 1.618rem 'Droid Sans', 'more font stack stuff', sans-serif;
+        font: bold 1.618rem 'Droid Sans', 'Lato', 'Roboto', sans-serif;
         text-align: center;
     }
     main{
         width: 90%;
     }
     .col{
-        float: none;
+        float: left;
         width: 50%;
+
+        padding-right: 15px;        
     }
     .col img{
         width: 60%;
@@ -206,7 +227,8 @@ pre, code, kbd{
         float: left;
     }
     footer{
-        width: 90%;    
+        clear: left;    
+        width: 90%;
     }
 }
 
@@ -236,7 +258,7 @@ pre, code, kbd{
     nav a:link,
     nav a:visited{
         display: block;
-        font: bold 1.618rem 'Droid Sans', 'more font stack stuff', sans-serif;
+        font: bold 1.618rem 'Droid Sans', 'Lato', 'Roboto', sans-serif;
         text-align: center;
     }
     main{
@@ -245,6 +267,8 @@ pre, code, kbd{
     .col{
         float: left;
         width: 50%;
+
+        padding-right: 15px;                
     }
     .col img{
         width: 50%;
@@ -287,7 +311,7 @@ pre, code, kbd{
     nav a:link,
     nav a:visited{
         display: block;
-        font: bold 1.618rem 'Droid Sans', 'more font stack stuff', sans-serif;
+        font: bold 1.618rem 'Droid Sans', 'Lato', 'Roboto', sans-serif;
         text-align: center;
     }
     main{
@@ -297,6 +321,8 @@ pre, code, kbd{
     .col{
         float: left;
         width: 50%;
+
+        padding-right: 15px;                
     }
     .col img{
         width: 55%;
