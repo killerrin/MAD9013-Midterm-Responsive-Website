@@ -50,7 +50,12 @@ html {
     font-family: 'Droid Sans', 'Lato', 'Roboto', sans-serif;
 }
 
-.clearfix {
+
+/* Add this class to <main> to clear the floated sections */
+
+.clearfix::after {
+    content: "";
+    display: block;
     clear: both;
 }
 
@@ -103,6 +108,7 @@ body {
 
 .main {
     margin: 0 auto;
+    /*/border: 1px solid red;/**/
 }
 
 footer {
@@ -188,80 +194,93 @@ a:visited {
 ***************************/
 
 
-/* Mobile View */
-
+/* Mobile View /* MOBILE SIZE doesn't need media query 
 @media screen and (min-width:0px) {
-    .wrapper {
-        width: 95%;
-        margin: 0 auto;
-    }
-    header {
-        width: 100%;
-    }
-    nav {
-        width: 100%;
-    }
-    nav>ul {
-        width: 100%;
-        background: rgba(119, 136, 153, 0.15);
-        border: 2px solid darkslategray;
-    }
-    nav li {
-        width: 100%;
-        list-style: none;
-        border-top: 1px solid darkslategray;
-        border-bottom: 1px solid darkslategray;
-    }
-    nav a,
-    nav a:link,
-    nav a:visited {
-        display: block;
-        font-size: 1.618rem;
-        text-align: center;
-    }
-    main {
-        width: 100%;
-    }
-    .col {
-        float: none;
-        width: 100%;
-        margin: 0 auto;
-        padding-right: 0;
-    }
-    .col img {
-        max-width: 100%;
-        width: 100%;
-        height: auto;
-        background-color: azure;
-        float: none;
-        margin-right: 0;
-    }
-    footer {
-        clear: left;
-        width: 100%;
-    }
-    /* Font Sizing */
-    h1 {
-        font-size: 2.618rem;
-    }
-    h2 {
-        font-size: 1.68rem;
-    }
-    li,
-    p,
-    a {
-        font-size: 1.0rem;
-    }
-    pre,
-    code,
-    kbd {
-        font-size: 1.0rem;
-    }
-    a,
-    a:link,
-    a:visited {
-        font-size: 1.0rem;
-    }
+*/
+
+.wrapper {
+    width: 95%;
+    margin: 0 auto;
+}
+
+header {
+    width: 100%;
+}
+
+nav {
+    width: 100%;
+}
+
+nav>ul {
+    width: 100%;
+    background: rgba(119, 136, 153, 0.15);
+    border: 2px solid darkslategray;
+}
+
+nav li {
+    width: 100%;
+    list-style: none;
+    border-top: 1px solid darkslategray;
+    border-bottom: 1px solid darkslategray;
+}
+
+nav a,
+nav a:link,
+nav a:visited {
+    display: block;
+    font-size: 1.618rem;
+    text-align: center;
+}
+
+main {
+    width: 100%;
+}
+
+.col {
+    float: none;
+    width: 100%;
+    margin: 0 auto;
+    padding-right: 0;
+}
+
+.col img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    background-color: azure;
+    float: none;
+    margin-right: 0;
+}
+
+footer {
+    clear: left;
+    width: 100%;
+}
+
+h1 {
+    font-size: 2.618rem;
+}
+
+h2 {
+    font-size: 1.68rem;
+}
+
+li,
+p,
+a {
+    font-size: 1.0rem;
+}
+
+pre,
+code,
+kbd {
+    font-size: 1.0rem;
+}
+
+a,
+a:link,
+a:visited {
+    font-size: 1.0rem;
 }
 
 
@@ -273,6 +292,9 @@ a:visited {
     }
     header {
         width: 100%;
+    }
+    header h1 {
+        margin: 0 0 0 5%;
     }
     nav {
         width: 90%;
